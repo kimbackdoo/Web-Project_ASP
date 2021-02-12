@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Top.master" AutoEventWireup="true" CodeBehind="Left.master.cs" Inherits="Team_Project.Left" %>
+
+<asp:Content ID="cntLeft" ContentPlaceHolderID="cphLeft" Runat="Server">
+    <table width="200px"><tr>
+		<td align="center">
+            <asp:LoginView ID="LoginView1" runat="server">
+                <AnonymousTemplate>
+                    <asp:Login ID="Login1" runat="server">
+                        <LayoutTemplate>
+                            <table cellpadding="1" cellspacing="0" style="border-collapse:collapse;">
+                                <tr>
+                                    <td>
+                                        <table cellpadding="0">
+                                            <tr>
+                                                <td align="center" colspan="2" height="30px">로그인</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right" width="100px" height="30px">사용자 이름 :</td>
+                                                <td valign="middle">
+                                                    <asp:TextBox ID="UserName" runat="server" Width="90px" Height="15px"></asp:TextBox>
+                                                    <asp:RequiredFieldValidator ID="UserNameRequired" 
+                                                    runat="server" ControlToValidate="UserName" 
+                                                    ErrorMessage="사용자 이름이 필요합니다." 
+                                                    ToolTip="사용자 이름이 필요합니다." 
+                                                    ValidationGroup="ctl00$Login1" Display="None">*</asp:RequiredFieldValidator>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right" width="100px" height="30px">암호 :</td>
+                                                <td valign="middle">
+                                                    <asp:TextBox ID="Password" runat="server" 
+                                                    TextMode="Password" Width="90px" Height="15px"></asp:TextBox>
+                                                    <asp:RequiredFieldValidator ID="PasswordRequired" 
+                                                    runat="server" ControlToValidate="Password" 
+                                                    ErrorMessage="암호가 필요합니다." ToolTip="암호가 필요합니다." 
+                                                    ValidationGroup="ctl00$Login1" Display="None">*</asp:RequiredFieldValidator>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" height="30px">
+                                                    <asp:CheckBox ID="RememberMe" runat="server" 
+                                                    Text=" 사용자 이름 및 암호 저장" style="font-size: small" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" colspan="2" style="color:Red;">
+                                                    <asp:Literal ID="FailureText" runat="server" 
+                                                    EnableViewState="False"></asp:Literal>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" colspan="2" height="30px">
+                                                    <asp:LinkButton ID="lbtnRegister" runat="server" 
+                                                    PostBackUrl="~/Public/Register.aspx">[회원가입]</asp:LinkButton>
+                                                    <asp:LinkButton ID="LinkButton1" runat="server" 
+                                                    PostBackUrl="~/Public/PasswordRecovery.aspx">[암호찾기]</asp:LinkButton>
+                                                    <asp:Button ID="LoginButton" runat="server" 
+                                                    CommandName="Login" Text="로그인" 
+                                                    ValidationGroup="ctl00$Login1" PostBackUrl="~/index.aspx" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </LayoutTemplate>
+                    </asp:Login>
+                </AnonymousTemplate>
+                <LoggedInTemplate>
+                    <center><asp:LoginName ID="LoginName1" runat="server" />님 반갑습니다.
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="lbtnChangePassword" runat="server" PostBackUrl="~/ChangePassword.aspx">[암호 변경]</asp:LinkButton>
+                        &nbsp;
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutText="[로그아웃]" />
+                    </center>
+                </LoggedInTemplate>
+            </asp:LoginView>
+		</td></tr><tr><td align="center">
+			<table width="200px"><tr>
+				<td align="center" style="font-size: 12px; font-weight: bold;" height="30px">
+					총 방문자 수</td></tr><tr>
+				<td align="center" height="30px">
+					<asp:Panel ID="pnlCounter" runat="server" Width="150px">
+					</asp:Panel>
+				</td></tr></table>
+		</td></tr>
+	</table>
+</asp:Content>
+<asp:Content ID="cntContent" ContentPlaceHolderID="cphContent" Runat="Server">
+    <asp:ContentPlaceHolder ID="cphContent" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="cntBottom" ContentPlaceHolderID="cphBottom" Runat="Server">
+    <asp:ContentPlaceHolder ID="cphBottom" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>

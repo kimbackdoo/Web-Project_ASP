@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Left.master" AutoEventWireup="true" CodeBehind="Bottom.master.cs" Inherits="Team_Project.Bottom" %>
+
+<asp:Content ID="cntContent" ContentPlaceHolderID="cphContent" Runat="Server">
+    <asp:ContentPlaceHolder ID="cphContent" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="cntBottom" ContentPlaceHolderID="cphBottom" Runat="Server">
+    <hr />
+	Copyleft <img src="/images/copyleft.png" style="height: 12px; width: 12px" /> Since 2020
+    <br />
+    20151230 김재훈 20151246 이  준 20151248 임  현
+</asp:Content>

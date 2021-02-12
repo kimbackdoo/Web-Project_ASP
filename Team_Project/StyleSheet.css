@@ -1,0 +1,175 @@
+﻿.tbl01 {
+    font-size: 12px;
+    width: 100%
+}
+
+.tbl02 {
+    font-size: 12px;
+    width: 800px
+}
+
+.td01 {
+    height: 2px;
+    background-color: #B0ADF5
+}
+
+.td02 {
+    height: 2px;
+    background-color: #B0ADF5;
+    width: 100%
+}
+
+.td03 {
+    padding-left: 10px;
+    height: 30px
+}
+
+.td04 {
+    padding-left: 20px;
+    height: 30px
+}
+
+.td05 {
+    padding-left: 20px;
+    height: 30px;
+    width: 120px
+}
+
+.td06 {
+    padding-left: 20px;
+    width: 120px
+}
+
+.td07 {
+    padding-left: 20px;
+    padding-top: 7px;
+    vertical-align: top
+}
+
+.td08 {
+    height: 1px;
+    background-color: #E7E7E7;
+    width: 100%
+}
+
+.p01 {
+    padding: 7px 7px 7px 7px
+}
+
+.p02 {
+    padding: 7px 0px 7px 0px
+}
+
+.p03 {
+    padding: 1px 7px 1px 7px
+}
+
+a.a01:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+a.a01:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+a.a01:hover {
+    text-decoration: none;
+    color: #800000;
+}
+
+a.a01:active {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #800000;
+}
+
+a:active {
+    text-decoration: none;
+    color: #000000;
+}
+
+a.lbtnStyle:link {
+    text-decoration: none;
+    color: #333333;
+    font-family: dotum;
+    font-size: 13px;
+    text-align: center;
+}
+
+a.lbtnStyle:visited {
+    text-decoration: none;
+    color: #333333;
+    font-family: dotum;
+    font-size: 13px;
+    text-align: center;
+}
+
+a.lbtnStyle:active {
+    text-decoration: none;
+    color: #333333;
+    font-family: dotum;
+    font-size: 13px;
+    text-align: center;
+}
+
+a.lbtnStyle:hover {
+    text-decoration: none;
+    color: red;
+    font-family: dotum;
+    font-size: 13px;
+    text-align: center;
+}
+
+.p {
+    font-family: dotum;
+    font-size: 15px
+}
+
+.label {
+    width: 8em;
+    float: left;
+    text-align: right;
+    margin-right: 0.5em;
+    display: block;
+    font-family: dotum;
+    font-size: 15px
+}
+
+.input {
+    color: #781351;
+    background: #fee3ad;
+    border: 1px solid #781351;
+    width: 250px
+}
+
+.button {
+    border: 1px solid #006;
+    background: #ccf;
+}
+
+    .button:hover {
+        border: 1px solid #f00;
+        background: #eef;
+    }
+
+h1 {
+    font-size: 20pt;
+    text-align: left;
+    margin-left: 200px
+}

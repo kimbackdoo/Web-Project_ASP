@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/SiteTemplate.Master" AutoEventWireup="true" CodeBehind="Top.master.cs" Inherits="Team_Project.Top" %>
+
+<asp:Content ID="cntTop" ContentPlaceHolderID="cphTop" Runat="Server">
+    <table width="800px">
+		<tr>
+			&nbsp;&nbsp;<td width="150px"><img src="/images/logo.png" style="width: 172px; height: 57px" />
+			</td>
+            <td valign="bottom" align="right">
+	            <td valign="bottom" align="right">
+                <a href="/index.aspx">[홈]</a>
+                &nbsp;&nbsp;&nbsp;<a href="/Board/List.aspx">[게시판]</a>
+                &nbsp;&nbsp;&nbsp;<a href="/Admin/AdminPage.aspx">[관리자페이지]</a>
+            </td>
+			<td valign="bottom" align="right" width="100px">
+			    &nbsp;</td>
+		</tr>
+	</table>
+	<hr />
+</asp:Content>
+
+<asp:Content ID="cntLeft" ContentPlaceHolderID="cphLeft" Runat="Server">
+    <asp:ContentPlaceHolder ID="cphLeft" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="cntContent" ContentPlaceHolderID="cphContent" Runat="Server">
+    <asp:ContentPlaceHolder ID="cphContent" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="cntBottom" ContentPlaceHolderID="cphBottom" Runat="Server">
+    <asp:ContentPlaceHolder ID="cphBottom" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>
